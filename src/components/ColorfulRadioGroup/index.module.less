@@ -1,0 +1,30 @@
+.colorful-radio-group {
+  display: flex;
+  border-radius: 4px;
+  width: fit-content;
+
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 8px 16px;
+    cursor: pointer;
+
+    &::after {
+      --top: 15px;
+      content: "";
+      position: absolute;
+      top: var(--top);
+      right: 0;
+      width: 1px;
+      height: 10px;
+      background: #eee;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
