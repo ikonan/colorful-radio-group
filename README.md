@@ -1,3 +1,3 @@
 # colorful-radio-group
 
-[demo](./demo.png)
+![demo](./demo.png)
