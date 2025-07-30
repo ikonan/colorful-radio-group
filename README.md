@@ -1,8 +1,8 @@
 # colorful-radio-group
 
 每个选项可以配置不同的颜色， 效果图：
-
-![demo](./demo.png)
+![](./demo1.png)
+![](./demo2.png)
 
 ## 使用
 ```tsx
