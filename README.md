@@ -1,6 +1,7 @@
 # colorful-radio-group
 
 每个选项可以配置不同的颜色， 效果图：
+
 ![](./demo1.png)
 ![](./demo2.png)
 
