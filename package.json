@@ -1,5 +1,5 @@
 {
-  "name": "colorful-radio-group",
+  "name": "@iiko/colorful-radio-group",
   "version": "0.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -7,6 +7,10 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "father build"
   },
@@ -15,9 +19,9 @@
     "ahooks": "^3.9.0"
   },
   "peerDependencies": {
-    "less": "^4.4.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "less": ">=4.x",
+    "react": ">= 17.x ",
+    "react-dom": ">= 17.x"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
