@@ -1,8 +1,8 @@
-import { CheckCircleFilled, CircleOutline } from "./Icons";
-import styles from "./index.module.less";
-import classNames from "classnames";
-import { useControllableValue } from "ahooks";
-import { TinyColor } from "@ctrl/tinycolor";
+import { CheckCircleFilled, CircleOutline } from './Icons';
+import { useControllableValue } from 'ahooks';
+import { TinyColor } from '@ctrl/tinycolor';
+
+import './index.less';
 
 type OptionType = {
   label: string;
@@ -23,23 +23,23 @@ export const ColorfulRadioGroup = ({
 }: ColorfulRadioGroupProps) => {
   const [state, setState] = useControllableValue(props);
   const currentOption = options.find((item) => item.value === state);
-  const { color: currentColor = "#eee" } = currentOption || {};
+  const { color: currentColor = '#eee' } = currentOption || {};
 
   return (
     <div
-      className={classNames(styles["colorful-radio-group"])}
+      className="colorful-radio-group"
       style={{ border: `1px solid ${currentColor}` }}
     >
       {options.map(({ label, value: _value, color }, index) => {
         const isChecked = state === _value;
         const selectedBackground = isChecked
           ? `${new TinyColor(color).setAlpha(0.1).toRgbString()}`
-          : "unset";
+          : 'unset';
 
         return (
           <div
             key={index}
-            className={styles["item"]}
+            className="item"
             onClick={() => setState(_value)}
             style={{ backgroundColor: selectedBackground }}
           >

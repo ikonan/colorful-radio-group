@@ -1,7 +1,15 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "declaration": true,
+    "target": "esnext",
+    "rootDir": "src",
+    "module": "esnext", // 推荐 ESNext 以支持 Tree Shaking
+    "moduleResolution": "bundler",
+    "esModuleInterop": true, // 兼容 CommonJS/ESM 混合导入
+    "skipLibCheck": true, // 避免第三方库类型检查失败
+    "jsx": "react-jsx",
+    "lib": ["esnext", "dom"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.stories.tsx"]
 }
