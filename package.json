@@ -1,6 +1,12 @@
 {
   "name": "colorful-radio-group",
   "version": "0.0.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "build": "father build"
   },
