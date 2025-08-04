@@ -10,10 +10,11 @@ type OptionType = {
   color?: string;
 };
 
+type ValueType = string | number | boolean;
 interface ColorfulRadioGroupProps {
-  defaultValue?: string;
-  value?: string;
-  onChange?: (value: string) => void;
+  defaultValue?: ValueType;
+  value?: ValueType;
+  onChange?: (value: ValueType) => void;
   options: OptionType[];
 }
 
