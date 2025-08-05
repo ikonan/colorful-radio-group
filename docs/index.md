@@ -1,13 +1,19 @@
 ---
 
-title: 配置页面标题
+hero:
+  title: '@iiko/colorful-radio-group'
+  desciption: 一个自定义样式的 RadioGroup 组件
 
 ---
 
-# @iiko/colorful-radio-group
 
-```jsx
+```tsx
 
+/**
+ * defaultShowCode: true
+ * title: '基本用法'
+ * description: 每个选项可以配置不同的颜色
+ */
 import React from 'react'
 import { ColorfulRadioGroup} from '@iiko/colorful-radio-group'
 export default () => <div>
